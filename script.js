@@ -11,3 +11,25 @@ function formatDate(date) {
     var currentDate = new Date();
     document.getElementById('date').textContent = formatDate(currentDate);
   });
+
+// Get the elements
+var popout = document.getElementById("statsPopout");
+var btn = document.getElementById("statsPopoutBtn");
+var span = document.getElementsByClassName("close-btn")[0];
+
+// When the user clicks the button, open the popout
+btn.onclick = function() {
+  popout.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the popout
+span.onclick = function() {
+  popout.style.display = "none";
+}
+
+// Also, consider closing the popout if the user clicks outside of it
+window.onclick = function(event) {
+  if (event.target == popout) {
+    popout.style.display = "none";
+  }
+}

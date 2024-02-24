@@ -19,6 +19,9 @@ header {
 
 nav {
     width: 100%; /* Full width navigation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -27,6 +30,9 @@ nav ul {
     padding: 0;
     overflow: hidden;
     width: 100%; /* Full width list */
+    display: flex;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li a.current-page {
@@ -253,6 +259,106 @@ h3 {
     opacity: 0;
 }
 
+b {
+    margin-right: 150em;
+    display: block;
+    color: white; /* Text color for links */
+    text-align: center;
+    padding: 14px 16px; /* Spacing inside the links */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    font-weight: bold; /* Bold font for the links */
+
+}
+
+
+.long-purple-button {
+    padding: 15px 60px; /* increased padding for longer button */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #7D3FC1; /* purple shade */
+    border: none;
+    border-radius: 5px; /* less round corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* take the full width of the container */
+    max-width: 300px; /* you can adjust this value to suit your design */
+  }
+  .long-purple-button:hover {
+    background-color: #6c34af; /* slightly darker purple shade on hover */
+  }
+  .long-purple-button:active {
+    background-color: #5e2d93; /* even darker purple shade when active/clicked */
+  }
+
+#statsPopoutBtn {
+    margin-right: 150em;
+  }
+/* Popout Container */
+.popout-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    right: 24em; /* Adjust based on nav bar positioning */
+    top: 60px; /* Adjust so it doesn't overlap with the nav bar */
+    width: auto; /* Auto width based on content */
+    height: auto; /* Auto height based on content */
+    z-index: 10; /* Ensure it's above other content */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+  }
+  
+  /* Popout Content */
+  .popout-content {
+    background-color: #fefefe;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+    width: 300px; /* Smaller fixed width */
+    position: relative; /* Ensure position is relative for positioning the close button */
+  }
+  
+  /* The Close Button */
+  .close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 10px; /* Position the close button inside the top right corner */
+    font-size: 25px; /* Adjust size as needed */
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Styling List inside the Popout for Better Presentation */
+  .popout-content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 8px 0; /* Add some space around the list */
+    color: black;
+    position: center;
+  }
+  
+  .popout-content li {
+    font-size: 25px; /* Adjust font size for readability */
+    margin-bottom: 8px; /* Space out the list items */
+    color: black;
+    padding-left: 3em;
+  }
+  
+
+
+
+
+
+
+
+
+
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
     .text-container {
@@ -307,4 +413,3 @@ h3 {
 
 
 }
-
