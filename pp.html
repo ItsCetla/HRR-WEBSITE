@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prize Picks UI</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .player-card {
+    background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align content */
+    overflow: hidden;
+  }
+  .player-info {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    padding: 10px;
+  }
+  .player-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .player-name {
+    font-weight: bold;
+    margin-top: 8px; /* Add space between image and name */
+  }
+  .points {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .action-button {
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid green;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  .highlighted {
+    background-color: green;
+    text-decoration: none;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="player-card">
+    <div class="player-info">
+      <img src="path_to_jason_tatum_image.jpg" alt="Jason Tatum" class="player-image">
+      <span class="player-name">Jason Tatum</span>
+    </div>
+    <div class="points">1.5 HRR</div>
+    <div class="actions">
+      <button class="action-button">LESS</button>
+      <button class="action-button highlighted">MORE</button>
+    </div>
+  </div>
+  
+  <!-- Repeat for other players... -->
+
+</div>
+
+</body>
+</html>

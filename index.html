@@ -4,28 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean UI Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" href="script.js">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html" class="current-page">H+R+R</a></li>
+                <li><a href="NRFI.html">NRFI/YRFI</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="feature">
-            <h1>Featured Product</h1>
-            <p>Discover the latest innovation in our product line.</p>
-            <button>Learn More</button>
-        </section>
+        <div class="bg">
+        <div class="img2">
+             <img src="https://www.pngall.com/wp-content/uploads/13/MLB-Logo-PNG-Pic.png">
+             </div>
+             <div class="text">
+                <h2><span id="date">TODAYS</span> PREDICTIONS</h2>
+            </div>
+        </div>
+        <div class="prize-picks-player-card-container">
+            <div class="prize-picks-player-card">
+              <div class="prize-picks-player-image-container">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34886.png&w=350&h=254" alt="Alex Bregman" class="prize-picks-player-image">      
+                <div class="prize-picks-player-name">Alex Bregman</div>
+              </div>
+              <div class="prize-picks-player-points">1.5 HRR</div>
+              <div class="prize-picks-player-odds">
+                Bet Odds: <strong>-145</strong>
+            </div>
+              <div class="prize-picks-player-actions">
+                <button class="prize-picks-action-button-no prize-prize-picks-crossed-out">LESS</button>
+                <button class="prize-picks-action-button-yes prize-picks-highlighted">MORE</button>
+              </div>
+            </div>
+            <div class="prize-picks-player-card">
+                <div class="prize-picks-player-image-container">
+                  <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33710.png&w=350&h=254" alt="Trea Turner" class="prize-picks-player-image">
+                  <div class="prize-picks-player-name">Trea Turner</div>
+                </div>
+                <div class="prize-picks-player-points">1.5 HRR</div>
+                <div class="prize-picks-player-odds">
+                    Bet Odds: <strong>-145</strong>
+                </div>
+                <div class="prize-picks-player-actions">
+                  <button class="prize-picks-action-button-no prize-picks-crossed-out">LESS</button>
+                  <button class="prize-picks-action-button-yes prize-picks-highlighted">MORE</button>
+                </div>
+              </div>
+              <div class="prize-picks-player-card">
+                <div class="prize-picks-player-image-container">
+                  <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33039.png&w=350&h=254" alt="Mookie Betts" class="prize-picks-player-image">
+                  <div class="prize-picks-player-name">Mookie Betts</div>
+                </div>
+                <div class="prize-picks-player-points">1.5 HRR</div>
+                <div class="prize-picks-player-odds">
+                    Bet Odds: <strong>-145</strong>
+                </div>
+                <div class="prize-picks-player-actions">
+                  <button class="prize-picks-action-button-yes prize-picks-highlighted">LESS</button>
+                  <button class="prize-picks-action-button-no prize-picks-crossed-out">MORE</button>
+                </div>
+              </div>
+            <!-- Repeat for other players... -->
+          
+          </div>
     </main>
     <footer>
-        <p>© 2024 Clean UI Website</p>
+        <p>© 2024 CetlaCorp</p>
     </footer>
     <script src="script.js"></script>
 </body>

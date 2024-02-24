@@ -1,40 +1,231 @@
+/* Base styles */
 body, html {
+    background-color: #4BB543; /* Grass green */
+    font-family: 'Octin Sports', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scroll in case of overflow */
+
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #1a1a1a; /* Dark background for the header */
+    color: white;
+    font-family: Arial, sans-serif; /* Replace with your preferred font */
+    width: 100%; /* Ensures the header is full width */
+    box-sizing: border-box; /* Ensures padding does not affect the width */
+}
+
+nav {
+    width: 100%; /* Full width navigation */
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%; /* Full width list */
 }
 
+nav ul li a.current-page {
+    background-color: #ffffff; /* White */
+    color: #FF0000; /* Red */
+}
+
+
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    float: left; /* Aligns the list items in a row */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+    display: block;
+    color: white; /* Text color for links */
+    text-align: center;
+    padding: 14px 16px; /* Spacing inside the links */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    font-weight: bold; /* Bold font for the links */
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Slightly lighter background for hover effect */
+}
+
+nav ul li a.current-page {
+    border-bottom: 3px solid #4CAF50; /* Underline for the current page */
+}
+
+/* Clear the float if necessary */
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .feature {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 10px;
 }
 
 footer {
     background-color: #f8f8f8;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
+
+.prize-picks-player-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space out the cards evenly */
+    align-items: flex-start; /* This will align the cards at the top */
+  }
+  
+  .prize-picks-player-card {
+    width: 250px; /* Adjust the width as necessary */
+    max-width: 100%; /* Ensures it doesn't stretch beyond its container */
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Octin Sports', Arial, sans-serif; /* Sporty font */
+    margin-top: 25px;
+    margin-left: auto; /* Centers the card if container is flex or grid */
+    margin-right: auto; /* Centers the card if container is flex or grid */
+  }
+  
+  
+  
+  .prize-picks-player-image-container {
+    padding: 10px;
+
+  }
+  
+  .prize-picks-player-image {
+    width: 125px;        /* Width of the image */
+    height: 125px;       /* Height of the image, make it the same as width for a circle */
+    object-fit: cover;  /* This will cover the area without squishing the image */
+    display: block;
+    margin: 0 auto;
+    border-radius: 5%;
+  }
+  
+  
+  .prize-picks-player-name {
+    margin-top: 10px;
+    color: black; /* Bright red for names, to grab attention */
+    font-weight: bold;
+  }
+  
+  .prize-picks-player-points {
+    font-size: 1.5em;
+    color: #4A4A4A; /* Dark grey for stats details */
+    font-weight: bold;
+    margin-top: -5px;
+  }
+  
+  .prize-picks-player-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .prize-picks-action-button-no {
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.603);
+    border: 1px solid red;
+    background: #222;
+    border-radius: 5px;
+    text-decoration: line-through;
+    opacity: .95;
+    flex-grow: 1; /* This makes the buttons take up equal space */
+    margin: 0 5px; /* This adds space between the buttons */
+  }
+
+  .prize-picks-action-button-yes {
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid green;
+    background: transparent;
+    border-radius: 5px;
+    text-decoration: line-through;
+    opacity: 0.6;
+    flex-grow: 1; /* This makes the buttons take up equal space */
+    margin: 0 5px; /* This adds space between the buttons */
+  }
+  
+  .prize-picks-highlighted {
+    background-color: green;
+    text-decoration: none;
+    opacity: 1;
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Makes the text larger */
+    color: #333; /* Dark gray color for good contrast */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    margin-top: 0.5em; /* Adds space above the header */
+    margin-bottom: 0.5em; /* Adds space below the header */
+    font-family: 'Octin Sports', Arial, sans-serif; /* Uses the custom font already in use */
+    text-transform: uppercase; /* Makes all letters uppercase */
+    letter-spacing: 1.5px; /* Increases spacing between letters */
+}
+
+
+h2 {
+    font-size: 80px; /* Makes the text larger */
+    color: #00098b; /* Dark gray color for good contrast */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    font-family: 'Octin Sports', Arial, sans-serif; /* Uses the custom font already in use */
+    text-transform: uppercase; /* Makes all letters uppercase */
+    letter-spacing: 1.5px; /* Increases spacing between letters */
+    text-align: left;
+    padding-left: 5%;
+
+}
+
+
+.bg{
+    background-image:url("blur.jpg");
+    background-size: 88% auto;
+    background-position: center;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    background-repeat: no-repeat;
+}
+
+.prize-picks-player-odds {
+    font-size: 16px; /* Adjust as needed */
+    margin-top: 2px;
+    margin-bottom: 1px; /* Spacing between the odds and action buttons */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Adjust color as needed */
+}
+
+
+img {
+    max-width: 200px;
+    max-height:200px;
+  }
+
+.img2 {
+    padding-left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space out the cards evenly */
+    align-items: flex-start;
+}
+
+
+  
+  
+.text {
+    font-size: 70px;
+ }
