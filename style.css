@@ -247,6 +247,12 @@ img {
     text-align: center; /* Center text */
 }
 
+
+h3 {
+    color:#0011ff;
+    opacity: 0;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
     .text-container {
@@ -299,8 +305,6 @@ img {
         align-items: center;
     }
 
-    h3 {
-        color:#00098b00
-    }
+
 }
 
