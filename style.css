@@ -297,14 +297,22 @@ b {
   }
 /* Popout Container */
 .popout-container {
-    display: none; /* Hidden by default */
-    position: fixed;
-    right: 24em; /* Adjust based on nav bar positioning */
-    top: 60px; /* Adjust so it doesn't overlap with the nav bar */
-    width: auto; /* Auto width based on content */
-    height: auto; /* Auto height based on content */
-    z-index: 10; /* Ensure it's above other content */
-    background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+  display: none; /* Hidden by default */
+  position: fixed;
+
+
+  z-index: 10; /* Ensure it's above other content */
+
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; /* Adjust based on your design */
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   /* Popout Content */
@@ -383,12 +391,27 @@ b {
     }
     h2 {
         font-size: 40px;
-}
+    }
 
+.popout-container {
+  display: none; /* Hidden by default */
+  position: fixed;
+
+
+  z-index: 10; /* Ensure it's above other content */
+
+  width: 90%; /* Makes the modal width responsive to screen size */
+  max-width: none; /* Overrides any max-width set for larger screens */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px; /* Adjust padding for smaller screens */
+  }
+    
 .img2 {
     padding-left: 0em;
 }
-
+}
 @media (max-width: 480px) {
     .content {
         flex-direction: column;
@@ -410,6 +433,8 @@ b {
         display: flex;
         align-items: center;
     }
+
+    
 
 
 }
