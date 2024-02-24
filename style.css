@@ -258,18 +258,27 @@ img {
 }
 
 @media (max-width: 768px) {
-    .image-container img {
+    .image-container {
         min-width: 100px;
     }
     .text-container {
         font-size: 0.6rem;
     }
     h2 {
-        font-size: 40px;
+        font-size: 30px;
+        text-align: center;
 }
 
 .img2 {
     padding-left: 0em;
+    display: flex;
+    align-items: center;
+}
+}
+
+.content {
+    flex-direction: column;
+    text-align: center;
 }
 
 @media (max-width: 480px) {
