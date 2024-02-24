@@ -11,9 +11,3 @@ function formatDate(date) {
     var currentDate = new Date();
     document.getElementById('date').textContent = formatDate(currentDate);
   });
-
-
-
-  if (screen.width <= 699) {
-    document.location = "http://m.yoursite.com";
-}

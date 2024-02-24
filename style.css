@@ -177,7 +177,7 @@ footer {
 
 
 h2 {
-    font-size: 5em; /* Makes the text larger */
+    font-size: 65px; /* Makes the text larger */
     color: #00098b; /* Dark gray color for good contrast */
     font-weight: bold; /* Makes the text bold */
     text-align: center; /* Centers the text */
@@ -199,10 +199,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* This will space out the cards evenly */
-    align-items: flex-start;
+
 }
 
 .prize-picks-player-odds {
@@ -217,16 +214,66 @@ h2 {
 img {
     max-width: 200px;
     max-height:200px;
+    
   }
 
 .img2 {
-    padding-left: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* This will space out the cards evenly */
-    align-items: flex-start;
+    padding-left: 40%;
 }
 
 
   
- 
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    width: auto;
+    max-width: 100%;
+    min-width: 120px; /* Ensuring image doesn't get too small */
+}
+
+.text-container {
+    flex-grow: 1;
+    padding: 0 20px;
+    font-size: 1rem; /* Default font size */
+    text-align: center; /* Center text */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .text-container {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        min-width: 100px;
+    }
+    .text-container {
+        font-size: 0.6rem;
+    }
+    h2 {
+        font-size: 40px;
+}
+
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container, .text-container {
+        width: 100%;
+    }
+    h2 {
+        font-size: 25px;
+    .text-container {
+        font-size: 0.5rem;
+    }
+}
