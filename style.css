@@ -177,7 +177,7 @@ footer {
 
 
 h2 {
-    font-size: 80px; /* Makes the text larger */
+    font-size: 10em; /* Makes the text larger */
     color: #00098b; /* Dark gray color for good contrast */
     font-weight: bold; /* Makes the text bold */
     text-align: center; /* Centers the text */
@@ -227,5 +227,5 @@ img {
   
   
 .text {
-    font-size: 70px;
+    font-size: 50%;
  }
