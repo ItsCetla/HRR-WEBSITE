@@ -199,6 +199,10 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space out the cards evenly */
+    align-items: flex-start;
 }
 
 .prize-picks-player-odds {
