@@ -311,8 +311,7 @@ b {
   width: 50%; /* Adjust based on your design */
   max-width: 600px;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
   }
   
   /* Popout Content */
@@ -320,7 +319,7 @@ b {
     background-color: #fefefe;
     padding: 10px 20px; /* Reduced padding */
     border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Shadow for depth */
     width: 300px; /* Smaller fixed width */
     position: relative; /* Ensure position is relative for positioning the close button */
   }
