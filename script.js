@@ -10,7 +10,21 @@ function formatDate(date) {
   document.addEventListener('DOMContentLoaded', function() {
     var currentDate = new Date();
     document.getElementById('date').textContent = formatDate(currentDate);
-  });
+        // URL where the CSV file is accessible
+
+
+        fetch('/Users/Kyle/Desktop/GITHUB/HRR-WEBSITE/test.csv')
+            .then(response => response.text())
+            .then(csvText => {
+                // Assuming the CSV is simple and just needs the first value
+                const firstRow = csvText.split('\n')[0]; // Get the first row
+                const firstValue = firstRow.split(',')[0]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value1').textContent = firstValue;
+            })
+            .catch(error => console.error('Error loading the CSV:', error));
+});
 
 // Get the elements
 var popout = document.getElementById("statsPopout");
@@ -33,3 +47,4 @@ window.onclick = function(event) {
     popout.style.display = "none";
   }
 }
+
