@@ -66,7 +66,10 @@ function formatDate(date) {
                 
                 // Update the HTML content
                 document.getElementById('v2').textContent = wValue;
+                var imageElement = document.getElementById('wValue');
                 const eValue = firstRow1.split(',')[2]; // Get the first value
+             
+
                 
                 // Update the HTML content
                 document.getElementById('v3').textContent = eValue;
