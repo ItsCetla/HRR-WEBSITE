@@ -49,7 +49,40 @@ function formatDate(date) {
                 document.getElementById('value6').textContent = sixValue;
 
             })
-            .catch(error => console.error('Error loading the CSV:', error));
+
+          
+
+        fetch('https://raw.githubusercontent.com/ItsCetla/HRR-WEBSITE/main/PlayerCards/playercard1.csv')
+         .then(response => response.text())
+          .then(csvText => {
+                // Assuming the CSV is simple and just needs the first value
+                const firstRow1 = csvText.split('\n')[0]; // Get the first row
+                const qValue = firstRow1.split(',')[0]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('v1').textContent = qValue;
+
+                const wValue = firstRow1.split(',')[1]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('v2').textContent = wValue;
+                const eValue = firstRow1.split(',')[2]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('v3').textContent = eValue;
+
+                const rValue = firstRow1.split(',')[3]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('v4').textContent = rValue;
+
+
+              })
+
+            
+  
+            
+  .catch(error => console.error('Error loading the CSV:', error));
 });
 
 // Get the elements
