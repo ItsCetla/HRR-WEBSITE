@@ -13,7 +13,7 @@ function formatDate(date) {
         // URL where the CSV file is accessible
 
 
-        fetch('/Users/Kyle/Desktop/GITHUB/HRR-WEBSITE/test.csv')
+        fetch('https://raw.githubusercontent.com/ItsCetla/HRR-WEBSITE/main/SeasonStats.csv')
             .then(response => response.text())
             .then(csvText => {
                 // Assuming the CSV is simple and just needs the first value
