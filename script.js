@@ -53,10 +53,10 @@ function formatDate(date) {
           
 
         fetch('https://raw.githubusercontent.com/ItsCetla/HRR-WEBSITE/main/PlayerCards/playercard1.csv')
-         .then(response => response.text())
-          .then(csvText => {
+         .then(response2 => response2.text())
+          .then(csvText1 => {
                 // Assuming the CSV is simple and just needs the first value
-                const firstRow1 = csvText.split('\n')[0]; // Get the first row
+                const firstRow1 = csvText1.split('\n')[0]; // Get the first row
                 const qValue = firstRow1.split(',')[0]; // Get the first value
                 
                 // Update the HTML content
