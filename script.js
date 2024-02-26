@@ -22,6 +22,32 @@ function formatDate(date) {
                 
                 // Update the HTML content
                 document.getElementById('value1').textContent = firstValue;
+
+                const secondValue = firstRow.split(',')[1]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value2').textContent = secondValue;
+
+                const thirdValue = firstRow.split(',')[2]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value3').textContent = thirdValue;
+
+                const fourValue = firstRow.split(',')[3]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value4').textContent = fourValue;
+
+                const fifthValue = firstRow.split(',')[4]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value5').textContent = fifthValue;
+
+                const sixValue = firstRow.split(',')[5]; // Get the first value
+                
+                // Update the HTML content
+                document.getElementById('value6').textContent = sixValue;
+
             })
             .catch(error => console.error('Error loading the CSV:', error));
 });
