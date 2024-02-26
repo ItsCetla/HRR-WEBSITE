@@ -299,53 +299,43 @@ b {
 .popout-container {
   display: none; /* Hidden by default */
   position: fixed;
-
-
-  z-index: 10; /* Ensure it's above other content */
-
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%; /* Adjust based on your design */
-  max-width: 600px;
-  padding: 20px;
-
-  }
+  z-index: 10; /* Keeps the popout above other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
   
   /* Popout Content */
   .popout-content {
-    background-color: #fefefe;
-    padding: 10px 20px; /* Reduced padding */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Shadow for depth */
-    width: 300px; /* Smaller fixed width */
-    position: relative; /* Ensure position is relative for positioning the close button */
+    background-color: #1a1a1a; /* Dark background similar to the card */
+    margin: 15% auto; /* Centers the content */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Adjust as needed */
   }
   
   /* The Close Button */
   .close-btn {
-    color: #aaa;
-    position: absolute;
-    top: 0;
-    right: 10px; /* Position the close button inside the top right corner */
-    font-size: 25px; /* Adjust size as needed */
+    color: #aaaaaa; /* Light grey color for the close button */
+    float: right;
+    font-size: 15px;
     font-weight: bold;
   }
   
   .close-btn:hover,
   .close-btn:focus {
-    color: black;
+    color: #f1f1f1; /* A lighter shade when hovered/focused */
     text-decoration: none;
     cursor: pointer;
   }
   
   /* Styling List inside the Popout for Better Presentation */
   .popout-content ul {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none; /* Removes the default list styling */
     padding: 0;
-    margin: 8px 0; /* Add some space around the list */
+    margin: 0;
     color: black;
     position: center;
   }
@@ -356,10 +346,33 @@ b {
     color: black;
     padding-left: 3em;
   }
+
+
+.popout-content ul li {
+  padding: 8px 0; /* Adds padding to each list item */
+  border-bottom: 1px solid #333; /* A subtle separator */
+  color: #dddddd; /* Light grey color for list text */
+  font-size: 1.2em;
+}
+
+.popout-content ul li span {
+  float: right;
+  color: #4BB543; /* Accent color, similar to the green in the image */
+}
   
 
-
-
+.popout-content h1 {
+  color: #ffffff; /* White color for the heading */
+  text-align: center;
+  font-size: 2em; /* Larger text for the heading */
+}
+.popout-content h2 {
+  color: #cccccc; /* Light grey color, adjust as needed */
+  text-align: center;
+  font-size: 1.5em; /* Slightly smaller than the main h1 heading */
+  margin-top: 0;
+  margin-bottom: 20px; /* Adds some space below the header */
+}
 
 
 
