@@ -1,204 +1,176 @@
 /* Base styles */
 body, html {
-    background-color: #4BB543; /* Grass green */
-    font-family: 'Octin Sports', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scroll in case of overflow */
-    
-   padding-bottom: 100px;
+  background-color: #4BB543; /* Grass green */
+  font-family: 'Octin Sports', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll in case of overflow */
   
 
 }
 
 header {
-    background-color: #1a1a1a; /* Dark background for the header */
-    color: white;
-    font-family: Arial, sans-serif; /* Replace with your preferred font */
-    width: 100%; /* Ensures the header is full width */
-    box-sizing: border-box; /* Ensures padding does not affect the width */
+  background-color: #1a1a1a; /* Dark background for the header */
+  color: white;
+  font-family: Arial, sans-serif; /* Replace with your preferred font */
+  width: 100%; /* Ensures the header is full width */
+  box-sizing: border-box; /* Ensures padding does not affect the width */
 }
 
 nav {
-    width: 100%; /* Full width navigation */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%; /* Full width navigation */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
-    list-style-type: none; /* Removes bullet points from the list */
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%; /* Full width list */
-    display: flex;
-    list-style: none;
-    padding: 0;
+  list-style-type: none; /* Removes bullet points from the list */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%; /* Full width list */
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li a.current-page {
-    background-color: #ffffff; /* White */
-    color: #FF0000; /* Red */
+  background-color: #ffffff; /* White */
+  color: #FF0000; /* Red */
 }
 
 
 nav ul li {
-    float: left; /* Aligns the list items in a row */
+  float: left; /* Aligns the list items in a row */
 }
 
 nav ul li a {
-    display: block;
-    color: white; /* Text color for links */
-    text-align: center;
-    padding: 14px 16px; /* Spacing inside the links */
-    text-decoration: none; /* Removes underline from links */
-    text-transform: uppercase; /* Uppercase text for a modern look */
-    font-weight: bold; /* Bold font for the links */
+  display: block;
+  color: white; /* Text color for links */
+  text-align: center;
+  padding: 14px 16px; /* Spacing inside the links */
+  text-decoration: none; /* Removes underline from links */
+  text-transform: uppercase; /* Uppercase text for a modern look */
+  font-weight: bold; /* Bold font for the links */
 }
 
 nav ul li a:hover {
-    background-color: #333; /* Slightly lighter background for hover effect */
+  background-color: #333; /* Slightly lighter background for hover effect */
 }
 
 nav ul li a.current-page {
-    border-bottom: 3px solid #4CAF50; /* Underline for the current page */
+  border-bottom: 3px solid #4CAF50; /* Underline for the current page */
 }
 
 /* Clear the float if necessary */
 nav:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .feature {
-    text-align: center;
-    padding: 50px 10px;
+  text-align: center;
+  padding: 50px 10px;
 }
 
 footer {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .prize-picks-player-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* This will space out the cards evenly */
-    align-items: flex-start; /* This will align the cards at the top */
-  }
-  
-  .prize-picks-player-card {
-    width: 250px; /* Adjust the width as necessary */
-    max-width: 100%; /* Ensures it doesn't stretch beyond its container */
-    background-color: #F4F4F4;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: 'Octin Sports', Arial, sans-serif; /* Sporty font */
-    margin-top: 25px;
-    margin-left: auto; /* Centers the card if container is flex or grid */
-    margin-right: auto; /* Centers the card if container is flex or grid */
-  }
-  
-  
-  
-  .prize-picks-player-image-container {
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will space out the cards evenly */
+  align-items: flex-start; /* This will align the cards at the top */
+}
 
-  }
-  
-  .prize-picks-player-image {
-    width: 125px;        /* Width of the image */
-    height: 125px;       /* Height of the image, make it the same as width for a circle */
-    object-fit: cover;  /* This will cover the area without squishing the image */
-    display: block;
-    margin: 0 auto;
-    border-radius: 5%;
-  }
-  
-  
-  .prize-picks-player-name {
-    margin-top: 10px;
-    color: black; /* Bright red for names, to grab attention */
-    font-weight: bold;
-  }
-  
-  .prize-picks-player-points {
-    font-size: 1.5em;
-    color: #4A4A4A; /* Dark grey for stats details */
-    font-weight: bold;
-    margin-top: -5px;
-  }
-  
-  .prize-picks-player-actions {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  
-  .prize-picks-action-button-no {
-    padding: 10px 20px;
-    color: rgba(255, 255, 255, 0.603);
-    border: 1px solid red;
-    background: #222;
-    border-radius: 5px;
-    text-decoration: line-through;
-    opacity: .95;
-    flex-grow: 1; /* This makes the buttons take up equal space */
-    margin: 0 5px; /* This adds space between the buttons */
-  }
-
-  .prize-picks-action-button-yes {
-    padding: 10px 20px;
-    color: white;
-    border: 1px solid green;
-    background: transparent;
-    border-radius: 5px;
-    text-decoration: line-through;
-    opacity: 0.6;
-    flex-grow: 1; /* This makes the buttons take up equal space */
-    margin: 0 5px; /* This adds space between the buttons */
-  }
-  
-  .prize-picks-highlighted {
-    background-color: green;
-    text-decoration: none;
-    opacity: 1;
-  }
-  
-  h1 {
-    font-size: 2.5em; /* Makes the text larger */
-    color: #333; /* Dark gray color for good contrast */
-    font-weight: bold; /* Makes the text bold */
-    text-align: center; /* Centers the text */
-    margin-top: 0.5em; /* Adds space above the header */
-    margin-bottom: 0.5em; /* Adds space below the header */
-    font-family: 'Octin Sports', Arial, sans-serif; /* Uses the custom font already in use */
-    text-transform: uppercase; /* Makes all letters uppercase */
-    letter-spacing: 1.5px; /* Increases spacing between letters */
+.prize-picks-player-card {
+  width: 250px; /* Adjust the width as necessary */
+  max-width: 100%; /* Ensures it doesn't stretch beyond its container */
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Octin Sports', Arial, sans-serif; /* Sporty font */
+  margin-top: 25px;
+  margin-left: auto; /* Centers the card if container is flex or grid */
+  margin-right: auto; /* Centers the card if container is flex or grid */
 }
 
 
-h2 {
-    font-size: 65px; /* Makes the text larger */
-    color: #00098b; /* Dark gray color for good contrast */
-    font-weight: bold; /* Makes the text bold */
-    text-align: center; /* Centers the text */
-    font-family: 'Octin Sports', Arial, sans-serif; /* Uses the custom font already in use */
-    text-transform: uppercase; /* Makes all letters uppercase */
-    letter-spacing: 1.5px; /* Increases spacing between letters */
-    text-align: left;
-    padding-left: 5%;
+
+.prize-picks-player-image-container {
+  padding: 10px;
 
 }
 
-h4 {
+.prize-picks-player-image {
+  width: 125px;        /* Width of the image */
+  height: 125px;       /* Height of the image, make it the same as width for a circle */
+  object-fit: cover;  /* This will cover the area without squishing the image */
+  display: block;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+
+.prize-picks-player-name {
+  margin-top: 10px;
+  color: black; /* Bright red for names, to grab attention */
+  font-weight: bold;
+}
+
+.prize-picks-player-points {
+  font-size: 1.5em;
+  color: #4A4A4A; /* Dark grey for stats details */
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.prize-picks-player-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.prize-picks-action-button-no {
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.603);
+  border: 1px solid red;
+  background: #222;
+  border-radius: 5px;
+  text-decoration: line-through;
+  opacity: .95;
+  flex-grow: 1; /* This makes the buttons take up equal space */
+  margin: 0 5px; /* This adds space between the buttons */
+}
+
+.prize-picks-action-button-yes {
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid green;
+  background: transparent;
+  border-radius: 5px;
+  text-decoration: line-through;
+  opacity: 0.6;
+  flex-grow: 1; /* This makes the buttons take up equal space */
+  margin: 0 5px; /* This adds space between the buttons */
+}
+
+.prize-picks-highlighted {
+  background-color: green;
+  text-decoration: none;
+  opacity: 1;
+}
+
+h1 {
   font-size: 2.5em; /* Makes the text larger */
   color: #333; /* Dark gray color for good contrast */
   font-weight: bold; /* Makes the text bold */
@@ -211,181 +183,195 @@ h4 {
 }
 
 
+h2 {
+  font-size: 65px; /* Makes the text larger */
+  color: #00098b; /* Dark gray color for good contrast */
+  font-weight: bold; /* Makes the text bold */
+  text-align: center; /* Centers the text */
+  font-family: 'Octin Sports', Arial, sans-serif; /* Uses the custom font already in use */
+  text-transform: uppercase; /* Makes all letters uppercase */
+  letter-spacing: 1.5px; /* Increases spacing between letters */
+  text-align: left;
+  padding-left: 5%;
+
+}
+
+
 .bg{
-    background-image:url("blur.jpg");
-    background-size: 88% auto;
-    background-position: center;
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* This will space out the cards evenly */
-    align-items: flex-start; /* This will align the cards at the top */
-  
+  background-image:url("blur.jpg");
+  background-size: 88% auto;
+  background-position: center;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will space out the cards evenly */
+  align-items: flex-start; /* This will align the cards at the top */
+
 
 }
 
 .prize-picks-player-odds {
-    font-size: 16px; /* Adjust as needed */
-    margin-top: 2px;
-    margin-bottom: 1px; /* Spacing between the odds and action buttons */
-    text-align: center; /* Center-align the text */
-    color: #333; /* Adjust color as needed */
+  font-size: 16px; /* Adjust as needed */
+  margin-top: 2px;
+  margin-bottom: 1px; /* Spacing between the odds and action buttons */
+  text-align: center; /* Center-align the text */
+  color: #333; /* Adjust color as needed */
 }
 
 
 img {
-    max-width: 200px;
-    max-height:200px;
-    
-  }
+  max-width: 200px;
+  max-height:200px;
+  
+}
 
 .img2 {
-    padding-left: 15em;
+  padding-left: 15em;
 }
 
 
-  
+
 .content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .image-container img {
-    width: auto;
-    max-width: 100%;
-    min-width: 120px; /* Ensuring image doesn't get too small */
+  width: auto;
+  max-width: 100%;
+  min-width: 120px; /* Ensuring image doesn't get too small */
 }
 
 .text-container {
-    flex-grow: 1;
-    padding: 0 20px;
-    font-size: 1rem; /* Default font size */
-    text-align: center; /* Center text */
+  flex-grow: 1;
+  padding: 0 20px;
+  font-size: 1rem; /* Default font size */
+  text-align: center; /* Center text */
 }
 
 
 h3 {
-    color:#0011ff;
-    opacity: 0;
+  color:#0011ff;
+  opacity: 0;
 }
 
 b {
-    margin-right: 150em;
-    display: block;
-    color: white; /* Text color for links */
-    text-align: center;
-    padding: 14px 16px; /* Spacing inside the links */
-    text-decoration: none; /* Removes underline from links */
-    text-transform: uppercase; /* Uppercase text for a modern look */
-    font-weight: bold; /* Bold font for the links */
+  margin-right: 150em;
+  display: block;
+  color: white; /* Text color for links */
+  text-align: center;
+  padding: 14px 16px; /* Spacing inside the links */
+  text-decoration: none; /* Removes underline from links */
+  text-transform: uppercase; /* Uppercase text for a modern look */
+  font-weight: bold; /* Bold font for the links */
 
 }
 
 
 .long-purple-button {
-    padding: 15px 60px; /* increased padding for longer button */
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #7D3FC1; /* purple shade */
-    border: none;
-    border-radius: 5px; /* less round corners */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%; /* take the full width of the container */
-    max-width: 300px; /* you can adjust this value to suit your design */
-  }
-  .long-purple-button:hover {
-    background-color: #6c34af; /* slightly darker purple shade on hover */
-  }
-  .long-purple-button:active {
-    background-color: #5e2d93; /* even darker purple shade when active/clicked */
-  }
+  padding: 15px 60px; /* increased padding for longer button */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #7D3FC1; /* purple shade */
+  border: none;
+  border-radius: 5px; /* less round corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* take the full width of the container */
+  max-width: 300px; /* you can adjust this value to suit your design */
+}
+.long-purple-button:hover {
+  background-color: #6c34af; /* slightly darker purple shade on hover */
+}
+.long-purple-button:active {
+  background-color: #5e2d93; /* even darker purple shade when active/clicked */
+}
 
 #statsPopoutBtn {
-    margin-right: 150em;
-  }
+  margin-right: 150em;
+}
 /* Popout Container */
 .popout-container {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 10; /* Keeps the popout above other content */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+display: none; /* Hidden by default */
+position: fixed;
+z-index: 10; /* Keeps the popout above other content */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
 }
-  
-  /* Popout Content */
-  .popout-content {
-    background-color: #1a1a1a; /* Dark background similar to the card */
-    margin: 15% auto; /* Centers the content */
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%; /* Adjust as needed */
-  }
-  
-  /* The Close Button */
-  .close-btn {
-    color: #aaaaaa; /* Light grey color for the close button */
-    float: right;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .close-btn:hover,
-  .close-btn:focus {
-    color: #f1f1f1; /* A lighter shade when hovered/focused */
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* Styling List inside the Popout for Better Presentation */
-  .popout-content ul {
-    list-style-type: none; /* Removes the default list styling */
-    padding: 0;
-    margin: 0;
-    color: black;
-    position: center;
-  }
-  
-  .popout-content li {
-    font-size: 25px; /* Adjust font size for readability */
-    margin-bottom: 8px; /* Space out the list items */
-    color: black;
-    padding-left: 3em;
-  }
+
+/* Popout Content */
+.popout-content {
+  background-color: #1a1a1a; /* Dark background similar to the card */
+  margin: 15% auto; /* Centers the content */
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%; /* Adjust as needed */
+}
+
+/* The Close Button */
+.close-btn {
+  color: #aaaaaa; /* Light grey color for the close button */
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #f1f1f1; /* A lighter shade when hovered/focused */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling List inside the Popout for Better Presentation */
+.popout-content ul {
+  list-style-type: none; /* Removes the default list styling */
+  padding: 0;
+  margin: 0;
+  color: black;
+  position: center;
+}
+
+.popout-content li {
+  font-size: 25px; /* Adjust font size for readability */
+  margin-bottom: 8px; /* Space out the list items */
+  color: black;
+  padding-left: 3em;
+}
 
 
 .popout-content ul li {
-  padding: 8px 0; /* Adds padding to each list item */
-  border-bottom: 1px solid #333; /* A subtle separator */
-  color: #dddddd; /* Light grey color for list text */
-  font-size: 1.2em;
+padding: 8px 0; /* Adds padding to each list item */
+border-bottom: 1px solid #333; /* A subtle separator */
+color: #dddddd; /* Light grey color for list text */
+font-size: 1.2em;
 }
 
 .popout-content ul li span {
-  float: right;
-  color: #4BB543; /* Accent color, similar to the green in the image */
+float: right;
+color: #4BB543; /* Accent color, similar to the green in the image */
 }
-  
+
 
 .popout-content h1 {
-  color: #ffffff; /* White color for the heading */
-  text-align: center;
-  font-size: 2em; /* Larger text for the heading */
+color: #ffffff; /* White color for the heading */
+text-align: center;
+font-size: 2em; /* Larger text for the heading */
 }
 .popout-content h2 {
-  color: #cccccc; /* Light grey color, adjust as needed */
-  text-align: center;
-  font-size: 1.5em; /* Slightly smaller than the main h1 heading */
-  margin-top: 0;
-  margin-bottom: 20px; /* Adds some space below the header */
+color: #cccccc; /* Light grey color, adjust as needed */
+text-align: center;
+font-size: 1.5em; /* Slightly smaller than the main h1 heading */
+margin-top: 0;
+margin-bottom: 20px; /* Adds some space below the header */
 }
 
 
@@ -395,229 +381,72 @@ b {
 
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
-    .text-container {
-        font-size: 0.9rem;
-    }
+  .text-container {
+      font-size: 0.9rem;
+  }
 
-    h2 {
-        font-size: 50px;
-    }
+  h2 {
+      font-size: 50px;
+  }
 
-    .img2 {
-        padding-left: 10em;
-    }
+  .img2 {
+      padding-left: 10em;
+  }
 }
 
 @media (max-width: 768px) {
-    .image-container img {
-        min-width: 100px;
-    }
-    .text-container {
-        font-size: 0.6rem;
-    }
-    h2 {
-        font-size: 40px;
-    }
+  .image-container img {
+      min-width: 100px;
+  }
+  .text-container {
+      font-size: 0.6rem;
+  }
+  h2 {
+      font-size: 40px;
+  }
 
 .popout-container {
-  display: none; /* Hidden by default */
-  position: fixed;
+display: none; /* Hidden by default */
+position: fixed;
 
 
-  z-index: 10; /* Ensure it's above other content */
+z-index: 10; /* Ensure it's above other content */
 
-  width: 90%; /* Makes the modal width responsive to screen size */
-  max-width: none; /* Overrides any max-width set for larger screens */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px; /* Adjust padding for smaller screens */
-  }
-    
+width: 90%; /* Makes the modal width responsive to screen size */
+max-width: none; /* Overrides any max-width set for larger screens */
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 10px; /* Adjust padding for smaller screens */
+}
+  
 .img2 {
-    padding-left: 0em;
+  padding-left: 0em;
 }
 }
 @media (max-width: 480px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .image-container, .text-container {
-        width: 100%;
-    }
-    h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-    .text-container {
-        font-size: 0.5rem;
-    }
-
-    .img2 {
-        padding-left: -5em;
-        display: flex;
-        align-items: center;
-    }
-
-    
-
-
-}
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
-
-
-
-
-.wrapper{
-  width: 280px;
-  height: 480px;
-  perspective: 800px;
-  position: relative;
-}
-
-.card{
-  width: 320px;
-  height: 450px;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-140px);
-  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-  cursor: pointer;
-}
-
-.card > div{
-  position: absolute;
-  width: 320px;
-  height: 450px;
-  padding: 34px 21px;
-  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-}
-
-.front{
-  background-image: linear-gradient(180deg, rgba(145,141,144,1) 0%, rgba(92,91,94,0) 100%);
-  transform: rotateY(0deg) translateZ(160px); 
-  border-radius: 34px 3px 0 0;
-}
-
-.right{ 
-  background-image: linear-gradient(0deg, rgba(145,141,144,1) 0%, rgba(92,91,94,0) 100%);
-  opacity: 0.08;
-  transform: rotateY(90deg) translateZ(160px);
-  border-radius: 0 0 3px 34px;
-}
-
-.card:hover{
-  transform: translateZ(-160px) rotateY( -90deg);
-}
-
-.card:hover .front{
-  opacity: 0; 
-}
-
-.card:hover .right{
-  opacity: 1; 
-}
-
-
-
-.img-wrapper{
-  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
-  position: absolute;
-  top: 0; right: 0;
-  pointer-events: none;
-  backface-visibility: hidden;
-}
-
-@keyframes float{
-  0%{
-    transform: translateZ(20px);
+  .content {
+      flex-direction: column;
+      text-align: center;
   }
-  100%{
-    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  .image-container, .text-container {
+      width: 100%;
   }
-}
-
-.card:hover ~ .img-wrapper img{
-  transform: scale(0.9) translateX(20%) translateY(70%) ;
-}
-
-ul{
-  margin-left: 21px;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 300;
-  list-style: none;
-}
-
-li{
-  padding-bottom: 8px;
-  position: relative;
-}
-
-li:before{
-  content: 'x';
-  position: absolute;
-  left: -21px;
-  opacity: .55;
-}
-
-button{
-  position: absolute;
-  right: 21px; 
-  bottom: 34px;
-  border: none;
-  box-shadow: none;
-  background: none;
-  color: inherit;
-  font-family: 'Exo 2';
-  font-weight: 300;
-  font-size: 15px;  
-  letter-spacing: -.25px;
-  font-weight: 700;
-  padding: 13px 34px;
-  border-radius: 55px 55px 21px 55px;
-  background-image: linear-gradient(130deg, rgba(117,51,165,1)  50%, rgba(51,46,57,.89) 100%);
-  background-size: 125% 100%;
-  background-position: right;
-  cursor: pointer;
-  box-shadow: 8px 5px 13px rgba(34,34,34,.08);
-  transform: scale(0) skewY(13deg);
-  transition: all 150ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-  transform-origin: right bottom;
-}
-
-.card:hover button{
-   transform: scale(1) skewY(0);
-}
-
-.card:not(:hover) button{
-opacity: 0;
-}
-
-button:hover{
-  background-position: left;
-}
-
-.price{
-  position: absolute;
-  bottom: 34px;
-  left: 21px;
-  font-size: 34px;
-  opacity: .34;
-}
-
-@keyframes fadeIn{
-  0%{
-    opacity: 0.33;
-    transform: scale(.89);
+  h2 {
+      font-size: 25px;
+      text-align: center;
   }
+  .text-container {
+      font-size: 0.5rem;
+  }
+
+  .img2 {
+      padding-left: -5em;
+      display: flex;
+      align-items: center;
+  }
+
+  
+
+
 }
